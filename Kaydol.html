@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - Anne Temel Eğitim Programı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bc.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Anne Temel Eğitim Programı</h1>
+        </div>
+        <button class="mobile-menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <a href="Anasayfa.html">Anasayfa</a>
+            <a href="İçerikler.html">İçerikler</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Takip.html">Takip</a>
+        </nav>
+    </header>
+
+    <section class="register-section">
+        <div class="register-container">
+            <div class="register-header">
+                <h2>Kayıt Ol</h2>
+                <p>Hemen ücretsiz hesap oluşturun ve eğitim içeriklerine erişin</p>
+            </div>
+            <form id="registerForm" class="register-form">
+                <div class="form-group">
+                    <label for="name">
+                        <i class="fas fa-user"></i>
+                        Ad Soyad
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız">
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                        Şifre
+                    </label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                    <small class="password-hint">En az 8 karakter, bir büyük harf ve bir rakam içermelidir</small>
+                </div>
+                <div class="form-group">
+                    <label for="passwordConfirm">
+                        <i class="fas fa-lock"></i>
+                        Şifre Tekrar
+                    </label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required placeholder="••••••••">
+                </div>
+                <div class="form-group terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        <span>Kullanım koşullarını ve gizlilik politikasını kabul ediyorum</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Kayıt Ol</button>
+            </form>
+            <div class="register-footer">
+                <p>Zaten hesabınız var mı? <a href="Giriş.html">Giriş Yapın</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-envelope"></i> info@annetemel.com</p>
+                <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="İçerikler.html">İçerikler</a></li>
+                    <li><a href="İletişim.html">İletişim</a></li>
+                    <li><a href="Takip.html">Takip</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="current-year">2024</span> Anne Temel Eğitim Programı. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

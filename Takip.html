@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takip - Anne Temel Eğitim Programı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css">
+    <link rel="stylesheet" href="bc.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Anne Temel Eğitim Programı</h1>
+        </div>
+        <button class="mobile-menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <a href="Anasayfa.html">Anasayfa</a>
+            <a href="İçerikler.html">İçerikler</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Takip.html" class="active">Takip</a>
+        </nav>
+    </header>
+
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h2>Eğitim Takibi</h2>
+                <div class="date-filter">
+                    <select id="timeRange">
+                        <option value="week">Bu Hafta</option>
+                        <option value="month">Bu Ay</option>
+                        <option value="year">Bu Yıl</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <div class="stat-info">
+                        <h3>Tamamlanan Dersler</h3>
+                        <p class="stat-number">24</p>
+                        <p class="stat-change positive">+3 bu hafta</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-info">
+                        <h3>Toplam Çalışma Süresi</h3>
+                        <p class="stat-number">32 saat</p>
+                        <p class="stat-change positive">+5 saat bu hafta</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <div class="stat-info">
+                        <h3>Kazanılan Rozetler</h3>
+                        <p class="stat-number">8</p>
+                        <p class="stat-change positive">+2 bu ay</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="stat-info">
+                        <h3>Başarı Oranı</h3>
+                        <p class="stat-number">85%</p>
+                        <p class="stat-change positive">+5% bu ay</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Haftalık İlerleme</h3>
+                    <canvas id="progressChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Konu Dağılımı</h3>
+                    <canvas id="topicsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="recent-activities">
+                <h3>Son Aktiviteler</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Matematik Dersi Tamamlandı</h4>
+                            <p>2 saat önce</p>
+                        </div>
+                        <div class="activity-score">
+                            <span class="score">95%</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Haftalık Başarı Rozeti Kazanıldı</h4>
+                            <p>5 saat önce</p>
+                        </div>
+                        <div class="activity-score">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Fen Bilgisi Dersi Başlatıldı</h4>
+                            <p>1 gün önce</p>
+                        </div>
+                        <div class="activity-score">
+                            <span class="in-progress">Devam Ediyor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-envelope"></i> info@annetemel.com</p>
+                <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="İçerikler.html">İçerikler</a></li>
+                    <li><a href="İletişim.html">İletişim</a></li>
+                    <li><a href="Takip.html">Takip</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="current-year">2024</span> Anne Temel Eğitim Programı. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

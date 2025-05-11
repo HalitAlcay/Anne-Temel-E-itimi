@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne Temel Eğitim Programı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="bc.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Anne Temel Eğitim Programı</h1>
+        </div>
+        <button class="mobile-menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <a href="Anasayfa.html" class="active">Anasayfa</a>
+            <a href="İçerikler.html">İçerikler</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Takip.html">Takip</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Çocuğunuzun Gelişimi İçin Birlikteyiz</h1>
+            <p class="animate-text-delay">Eğitimde yeni bir dönem başlıyor</p>
+            <div class="hero-buttons">
+                <a href="Kaydol.html" class="btn btn-primary">Kayıt Ol</a>
+                <a href="Giriş.html" class="btn btn-secondary">Giriş Yap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/800x400/?education" alt="Eğitim">
+                    <div class="slide-content">
+                        <h3>Kaliteli Eğitim</h3>
+                        <p>Uzman eğitmenlerle birlikte</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/800x400/?learning" alt="Öğrenme">
+                    <div class="slide-content">
+                        <h3>İnteraktif Öğrenme</h3>
+                        <p>Eğlenceli ve etkili öğrenme deneyimi</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/800x400/?children" alt="Çocuklar">
+                    <div class="slide-content">
+                        <h3>Çocuk Dostu</h3>
+                        <p>Güvenli ve eğlenceli bir ortam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Neden Bizi Seçmelisiniz?</h2>
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll">
+                <i class="fas fa-book-reader"></i>
+                <h3>Zengin İçerik</h3>
+                <p>Binlerce eğitim materyali</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fas fa-chart-line"></i>
+                <h3>Gelişim Takibi</h3>
+                <p>Detaylı ilerleme raporları</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fas fa-users"></i>
+                <h3>Uzman Kadro</h3>
+                <p>Deneyimli eğitmenler</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fas fa-clock"></i>
+                <h3>7/24 Destek</h3>
+                <p>Her zaman yanınızdayız</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Hemen Başlayın</h2>
+        <p>Çocuğunuzun eğitim yolculuğuna bugün başlayın</p>
+        <a href="Kaydol.html" class="btn btn-primary">Ücretsiz Deneyin</a>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-envelope"></i> info@annetemel.com</p>
+                <p><i class="fas fa-phone"></i> +90 555 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="İçerikler.html">İçerikler</a></li>
+                    <li><a href="İletişim.html">İletişim</a></li>
+                    <li><a href="Takip.html">Takip</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="current-year">2024</span> Anne Temel Eğitim Programı. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
